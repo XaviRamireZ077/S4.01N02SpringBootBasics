@@ -7,12 +7,12 @@ public class HelloWorldController {
     @GetMapping("/HelloWorld")
     public String Saluda(@RequestParam(defaultValue = "UNKNOWN") String nom) {
 
-        return "Hola, " + nom + "Estas executant un projecte Gradle";
+        return "Hola, " + nom + " Estas executant un projecte Gradle";
     }
 
     @RequestMapping(value = {"/HelloWorld2","/HelloWorld2/{nom}"})
     public String Saluda2(@PathVariable(required = false) String nom) {
-        return "Hola, " + nom + "Estas executant un projecte Gradle";
+        return "Hola, " + nom + " Estas executant un projecte Gradle";
 
     }
 }
